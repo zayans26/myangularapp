@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Sum Calculator</h1>
+    <form (ngSubmit)="calculateSum()">
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" [(ngModel)]="num1" name="num1" required>
+  
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" [(ngModel)]="num2" name="num2" required>
+  
+      <button type="submit">Calculate Sum</button>
+    </form>
+  
+    <p id="result">{{ resultMessage }}</p>
+  </div>
+  
